@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header__hamburgerIcon.inactive{
+  display: none;
+}
+a.activePage{
+  border-color: white;
+}
+nav.active{
+  transform: translateX(0%);
+}

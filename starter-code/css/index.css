@@ -1,3 +1,69 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  --blue-900: hsl(230, 35%, 7%);
+  --blue-300: hsl(231, 77%, 90%);
+  --white: hsl(0, 0%, 100%);
+
+  --s-25: 2px;
+  --s-50: 4px;
+  --s-100: 8px;
+  --s-150: 12px;
+  --s-200: 16px;
+  --s-300: 24px;
+  --s-400: 32px;
+  --s-500: 40px;
+  --s-600: 48px;
+  --s-800: 64px;
+  --s-1000: 80px;
+  --s-1200: 96px;
+  --s-1600: 128px;
+}
+img, svg{
+  display: block;
+  width: 100%;
+  height: auto;
+
+  object-fit: fill;
+}
+body{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.text-1, .text-2, .text-3, .text-4, .text-6{
+  font-family: "Bellefair", serif;
+}
+.text-5, .text-7, .text-8{
+  font-family: "Barlow Condensed", sans-serif;
+}
+.text-1, .text-2, .text-3, .text-4, .text-6, .text-9{
+  letter-spacing: 0px;
+}
+.text-1, .text-2, .text-3, .text-4, .text-5, .text-6, .text-7, .text-8{
+  line-height: normal;
+} 
+
+.text-1{font-size: 144px;}
+.text-2{font-size: 100px;}
+.text-3{font-size: 56px;}
+.text-4{font-size: 32px;}
+.text-5{
+  font-size: 28px;
+  letter-spacing: 4px;
+}
+.text-6{font-size: 28px;}
+.text-7{font-size: 14px;}
+.text-8{font-size: 16px;}
+.text-9{
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+}

@@ -1,11 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './starter-code/html/index.html',
-    './starter-code/js/*.js',
+    './index.html',
+    './starter-code/html/*.html',
+    './starter-code/js/main.js',
   ],
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        'customTabletHeader': '90px 1fr',
+      },
+    },
   },
   plugins: [],
 }
