@@ -10,6 +10,9 @@ module.exports = {
       gridTemplateColumns: {
         'customTabletHeader': '90px 1fr',
       },
+      gridTemplateRows: {
+        'customMobileMainRows': 'fit-content(1000px), auto',
+      },
     },
   },
   plugins: [],

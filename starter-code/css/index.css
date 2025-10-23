@@ -27,43 +27,58 @@
   --s-1600: 128px;
 }
 img, svg{
-  display: block;
   width: 100%;
   height: auto;
 
   object-fit: fill;
 }
 body{
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: #cccccc;
 }
 
-.text-1, .text-2, .text-3, .text-4, .text-6{
+.text-1-mobile, .text-1, .text-2, .text-3, .text-4-mobile, .text-4, .text-6-mobile, .text-6{
   font-family: "Bellefair", serif;
 }
-.text-5, .text-7, .text-8{
+.text-5-mobile, .text-5, .text-7, .text-8{
   font-family: "Barlow Condensed", sans-serif;
 }
-.text-1, .text-2, .text-3, .text-4, .text-6, .text-9{
+.text-1-mobile, .text-1, .text-2, .text-3, .text-4, .text-6-mobile, .text-6, .text-9{
   letter-spacing: 0px;
 }
-.text-1, .text-2, .text-3, .text-4, .text-5, .text-6, .text-7, .text-8{
+.text-1-mobile, .text-1, .text-2, .text-3, .text-4-mobile, .text-4, .text-5-mobile, .text-5, .text-6-mobile, .text-6, .text-7, .text-8{
   line-height: normal;
-} 
-
-.text-1{font-size: 144px;}
-.text-2{font-size: 100px;}
-.text-3{font-size: 56px;}
-.text-4{font-size: 32px;}
-.text-5{
-  font-size: 28px;
-  letter-spacing: 4px;
 }
-.text-6{font-size: 28px;}
-.text-7{font-size: 14px;}
-.text-8{font-size: 16px;}
-.text-9{
-  font-family: "Barlow", sans-serif;
-  font-size: 18px;
+.text-1-mobile, .text-1, .text-2, .text-3, .text-4, .text-5-mobile, .text-5, .text-6-mobile, .text-6, .text-7, .text-8, .text-9-mobile, .text-9-tablet, .text-9{
+  color: var(--white);
+}
+
+@responsive {
+  .text-1-mobile{font-size: 80px};
+  .text-1{font-size: 144px;}
+  .text-2{font-size: 100px;}
+  .text-3{font-size: 56px;}
+  .text-4-mobile{font-size: 14px;}
+  .text-4{font-size: 32px;}
+  .text-5{
+    font-size: 28px;
+    letter-spacing: 4px;
+  }
+  .text-6-mobile{font-size: 16px;}
+  .text-6{font-size: 28px;}
+  .text-7{font-size: 14px;}
+  .text-8{font-size: 16px;}
+  .text-9-mobile, .text-9-tablet, .text-9{
+    font-family: "Barlow", sans-serif;
+  }
+  .text-9-mobile{
+    font-size: 15px;
+    line-height: 180%;
+  }
+  .text-9-tablet{
+    font-size: 16px;
+    line-height: 180%;
+  }
+  .text-9{
+    font-size: 18px;
+  }
 }

@@ -2,12 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-.header__hamburgerIcon.inactive{
-  display: none;
-}
 a.activePage{
   border-color: white;
 }
-nav.active{
-  transform: translateX(0%);
+@media(max-width: 767px){
+  nav{
+    transform: translateX(100%);
+    pointer-events: none;
+  }
+  nav.active{
+    transform: translateX(0);
+    pointer-events: all;
+  }
+  body:has(nav.active){
+    overflow: hidden;
+    height: 100svh;
+  }
 }
