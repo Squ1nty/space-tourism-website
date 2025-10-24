@@ -1,11 +1,9 @@
 let body = document.querySelector("body");
 let hamburger = document.querySelector(".header__hamburgerIcon");
 let closing = document.querySelector(".header__closingIcon");
-//let desktopNav = document.querySelectorAll("nav")[0];
 let nav = document.querySelector("nav");
 let navLinks = nav.querySelectorAll("a");
 let lastNavLink = navLinks[navLinks.length - 1];
-let bgImg = document.querySelector(".body__bgImg");
 
 lastNavLink.addEventListener("keydown", (e) => {
   if(e.key === "Tab" && window.innerWidth < 768){
@@ -53,18 +51,6 @@ closing.addEventListener("keydown", (e) => {
   }
 });
 
-// Handles major screen size changes upon initial load and any resizing
-function handleBackgroundImg(){
-  if(window.innerWidth >= 768 && window.innerWidth < 1440){
-    bgImg.setAttribute("src", "./starter-code/assets/home/background-home-tablet.jpg");
-  }
-  else if(window.innerWidth >= 1440){
-    body.style.backgroundImage = "./starter-code/assets/home/background-home-desktop.jpg";
-  }
-  else if(window.innerWidth < 768){
-    bgImg.setAttribute("src", "./starter-code/assets/home/background-home-mobile.jpg");
-  }
-}
 function handleNavDefaultStates(){
   if(window.innerWidth >= 768){
     hamburger.setAttribute("inert", true);
@@ -80,11 +66,9 @@ function setDefaultStates(){
   navLinks[0].classList.add("activePage");
 }
 window.addEventListener("load", () => {
-  handleBackgroundImg();
   handleNavDefaultStates();
   setDefaultStates();
 });
 window.addEventListener("resize", () => {
-  handleBackgroundImg();
   handleNavDefaultStates();
 })
