@@ -62,13 +62,20 @@ function handleNavDefaultStates(){
     nav.setAttribute("inert", true);
   }
 }
-function setDefaultStates(){
-  navLinks[0].classList.add("activePage");
-}
-window.addEventListener("load", () => {
-  handleNavDefaultStates();
-  setDefaultStates();
-});
+
 window.addEventListener("resize", () => {
   handleNavDefaultStates();
-})
+});
+document.addEventListener("DOMContentLoaded", (e) => {
+  const currentPage = window.location.pathname.split('/').pop();
+  console.log("currentPage: " + currentPage);
+  navLinks.forEach((anchor) => {
+    const linkPage = anchor.getAttribute('href').split('/').pop();
+    console.log("linkPage: " + linkPage);
+    if(linkPage === currentPage){
+      anchor.classList.add("activePage");
+    }
+  });
+
+  handleNavDefaultStates();
+});
