@@ -6,6 +6,31 @@
   animation: planet-spin 30s infinite linear;
 }
 
+.main__planetaryObjImg{
+  transform: translateX(500px);
+  transition: transform 0.5s ease;
+}
+.main__planetaryObjImg.active{
+  transform: translateX(0);
+}
+.main__planetaryObjBtn.active{
+  border-color: var(--white);
+}
+.main__planetaryObjDesc{
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+.main__planetaryObjDesc.active{
+  transform: translateX(0);
+}
+.main__planetaryObjDist, .main__planetaryObjTime{
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
+}
+.main__planetaryObjDist.active, .main__planetaryObjTime.active{
+  transform: translateY(0);
+}
+
 @keyframes planet-spin{
   0%{
     transform: rotate(0deg);

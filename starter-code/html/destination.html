@@ -45,33 +45,73 @@
       <p class="text-6-mobile md:text-5-tablet lg:text-5">PICK YOUR DESTINATION</p>
     </div>
     <div class="flex flex-col items-center justify-center gap-8 lg:grid lg:grid-cols-2 h-fit">
-      <div class="grid place-items-center w-[327px] h-[203px] px-6 md:w-[688px] md:h-[384px] lg:w-[500px] lg:h-[550px]">
-        <img class="planet-spin w-[150px] md:w-[300px] lg:w-[480px]" src="../assets/destination/image-moon.png" alt="Cropped image of ">
+      <div class="grid relative place-items-center w-[327px] h-[203px] px-6 md:w-[688px] md:h-[384px] lg:w-[500px] lg:h-[550px] overflow-hidden">
+        <div class="main__planetaryObjImg absolute w-full grid place-items-center"><img class="w-[150px] planet-spin md:w-[300px] lg:w-[480px]" src="../assets/destination/image-moon.png" alt="Full shot of the Moon"></div>
+        <div class="main__planetaryObjImg absolute w-full grid place-items-center"><img class="w-[150px] planet-spin md:w-[300px] lg:w-[480px]" src="../assets/destination/image-mars.png" alt="Full shot of Mars"></div>
+        <div class="main__planetaryObjImg absolute w-full grid place-items-center"><img class="w-[150px] planet-spin md:w-[300px] lg:w-[480px]" src="../assets/destination/image-europa.png" alt="Full shot of Jupiter's moon, Europa"></div>
+        <div class="main__planetaryObjImg absolute w-full grid place-items-center"><img class="w-[150px] planet-spin md:w-[300px] lg:w-[480px]" src="../assets/destination/image-titan.png" alt="Full shot of Jupiter's moon, Titan"></div>
       </div>
       <div class="flex flex-col items-center justify-center gap-6 w-full h-fit px-6 lg:gap-10">
         <div class="flex items-start justify-center gap-8 w-full lg:justify-start">
-          <button class="pb-2 border-b-[3px] border-solid border-transparent outline-none text-8-mobile md:text-8 [ hover:border-white focus:border-white transition-colors duration-150 ]" tabindex="0">MOON</button>
-          <button class="pb-2 border-b-[3px] border-solid border-transparent outline-none text-8-mobile md:text-8 [ hover:border-white focus:border-white transition-colors duration-150 ]" tabindex="0">MARS</button>
-          <button class="pb-2 border-b-[3px] border-solid border-transparent outline-none text-8-mobile md:text-8 [ hover:border-white focus:border-white transition-colors duration-150 ]" tabindex="0">EUROPA</button>
-          <button class="pb-2 border-b-[3px] border-solid border-transparent outline-none text-8-mobile md:text-8 [ hover:border-white focus:border-white transition-colors duration-150 ]" tabindex="0">TITAN</button>
+          <button class="main__planetaryObjBtn pb-2 border-b-[3px] border-solid border-transparent outline-none text-8-mobile md:text-8 [ hover:border-white focus:border-white transition-colors duration-150 ]" tabindex="0">MOON</button>
+          <button class="main__planetaryObjBtn pb-2 border-b-[3px] border-solid border-transparent outline-none text-8-mobile md:text-8 [ hover:border-white focus:border-white transition-colors duration-150 ]" tabindex="0">MARS</button>
+          <button class="main__planetaryObjBtn pb-2 border-b-[3px] border-solid border-transparent outline-none text-8-mobile md:text-8 [ hover:border-white focus:border-white transition-colors duration-150 ]" tabindex="0">EUROPA</button>
+          <button class="main__planetaryObjBtn pb-2 border-b-[3px] border-solid border-transparent outline-none text-8-mobile md:text-8 [ hover:border-white focus:border-white transition-colors duration-150 ]" tabindex="0">TITAN</button>
         </div>
-        <div class="flex flex-col gap-4">
-          <h1 class="text-center text-2-mobile lg:text-start md:text-2-tablet lg:text-2">MOON</h1>
-          <p class="text-center text-9-mobile text-[var(--blue-300)] lg:text-start md:text-9-tablet lg:text-9">
-            See our planet as you&apos;ve never seen it before. A perfect relaxing trip away to help 
-            regain perspective and come back refreshed. While you&apos;re there, take in some history 
-            by visiting the Luna 2 and Apollo 11 landing sites.
-          </p>
+        <div class="flex relative w-[327px] h-[215px] md:w-[514px] md:h-[195px] lg:w-[400px] lg:h-[254px] xl:w-[445px] gap-4 overflow-hidden">
+          <div class="main__planetaryObjDesc absolute">
+            <h1 class="text-center text-2-mobile lg:text-start md:text-2-tablet lg:text-2">MOON</h1>
+            <p class="text-center text-9-mobile text-[var(--blue-300)] lg:text-start md:text-9-tablet lg:text-9">
+              See our planet as you&apos;ve never seen it before. A perfect relaxing trip away to help 
+              regain perspective and come back refreshed. While you&apos;re there, take in some history 
+              by visiting the Luna 2 and Apollo 11 landing sites.
+            </p>
+          </div>
+          <div class="main__planetaryObjDesc absolute">
+            <h1 class="text-center text-2-mobile lg:text-start md:text-2-tablet lg:text-2">MARS</h1>
+            <p class="text-center text-9-mobile text-[var(--blue-300)] lg:text-start md:text-9-tablet lg:text-9">
+              Don&apos;t forget to pack your hiking boots. You&apos;ll need them to tackle Olympus Mons, 
+              the tallest planetary mountain in our solar system. It&apos;s two and a half times the size 
+              of Everest!
+            </p>
+          </div>
+          <div class="main__planetaryObjDesc absolute">
+            <h1 class="text-center text-2-mobile lg:text-start md:text-2-tablet lg:text-2">EUROPA</h1>
+            <p class="text-center text-9-mobile text-[var(--blue-300)] lg:text-start md:text-9-tablet lg:text-9">
+              The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover&apos;s 
+              dream. With an icy surface, it&apos;s perfect for a bit of ice skating, curling, hockey, or 
+              simple relaxation in your snug wintery cabin.
+            </p>
+          </div>
+          <div class="main__planetaryObjDesc absolute">
+            <h1 class="text-center text-2-mobile lg:text-start md:text-2-tablet lg:text-2">TITAN</h1>
+            <p class="text-center text-9-mobile text-[var(--blue-300)] lg:text-start md:text-9-tablet lg:text-9">
+              The only moon known to have a dense atmosphere other than Earth, Titan is a home away from 
+              home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of 
+              Saturn.
+            </p>
+          </div>
+
         </div>
         <hr class="h-[1px] w-full bg-white opacity-25">
         <div class="flex flex-col gap-6 w-full text-center md:grid md:grid-cols-2">
-          <div class="flex flex-col gap-3">
+          <div class="flex flex-col gap-3 h-[61px]">
             <p class="text-7">AVG. DISTANCE</p>
-            <p class="text-6">384,400 KM</p>
+            <div class="grid place-items-center relative w-full h-full overflow-hidden">
+              <p class="main__planetaryObjDist absolute text-6">384,400 KM</p>
+              <p class="main__planetaryObjDist absolute text-6">225 MIL. KM</p>
+              <p class="main__planetaryObjDist absolute text-6">628 MIL. KM</p>
+              <p class="main__planetaryObjDist absolute text-6">1.6 BIL. KM</p>
+            </div>
           </div>
-          <div class="flex flex-col gap-3">
+          <div class="flex flex-col gap-3 h-[61px]">
             <p class="text-7">EST. TRAVEL TIME</p>
-            <p class="text-6">3 DAYS</p>
+            <div class="grid place-items-center relative w-full h-full overflow-hidden">
+              <p class="main__planetaryObjTime absolute text-6">3 DAYS</p>
+              <p class="main__planetaryObjTime absolute text-6">9 MONTHS</p>
+              <p class="main__planetaryObjTime absolute text-6">3 YEARS</p>
+              <p class="main__planetaryObjTime absolute text-6">7 YEARS</p>
+            </div>
           </div>
         </div>
       </div>
