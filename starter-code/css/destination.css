@@ -13,8 +13,10 @@
 .main__planetaryObjImg.active{
   transform: translateX(0);
 }
-.main__planetaryObjBtn.active{
+.main__planetaryObjBtn.active, 
+.main__planetaryObjBtn.active:focus{
   border-color: var(--white);
+  opacity: 1;
 }
 .main__planetaryObjDesc{
   transform: translateX(-100%);
