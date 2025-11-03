@@ -5,23 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/crew.css">
+
+  <!-- Barlow Regular and Condensed + Bellefair Regular Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body>
-
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  02 Meet your crew
-
-  Commander
-  Douglas Hurley
-
-  Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
-  and former NASA astronaut. He launched into space for the third time as 
-  commander of Crew Dragon Demo-2.
+<body class="h-svh w-full grid grid-rows-grid grid-rows-customMobileMainRows relative">
+  <img class="body__bgImg fixed inset-0 -z-10 w-full h-full" alt="Space Tourism Background Visual: Earth Outer-Atmosphere">
+  <header class="lg:relative grid grid-cols-2 md:grid-cols-customTabletHeader items-center w-full h-fit p-6 md:p-0 md:pl-10 lg:pl-16 lg:mt-10 bg-transparent">
+    <div class="w-10 h-10 md:w-12 md:h-12 justify-self-start" tabindex="0">
+      <img src="../assets/shared/logo.svg" alt="Company Logo Icon">
+    </div>
+    <hr class="hidden lg:block absolute lg:w-[35%] xl:w-[40%] border-0.5 left-[12%] right-[49%] border-white border-opacity-25 border-solid top-1/2 z-20">
+    <div class="header__hamburgerIcon md:hidden w-6 h-[21px] justify-self-end cursor-pointer" tabindex="0">
+      <img src="../assets/shared/icon-hamburger.svg" alt="Opening mobile menu icon">
+    </div>
+    <nav class="flex flex-col w-2/3 fixed top-0 bottom-0 right-0 left-auto z-10 bg-transparent backdrop-blur-xl transition-transform duration-500 md:bg-white md:bg-opacity-5 md:static md:flex md:flex-row md:gap-12 md:justify-self-end md:px-10 md:w-full lg:w-9/12 xl:w-7/12">
+      <div class="header__closingIcon md:hidden w-6 h-[21px] my-8 mr-6 self-end cursor-pointer" tabindex="0">
+        <img src="../assets/shared/icon-close.svg" alt="Closing mobile menu icon">
+      </div>
+      <ul class="flex flex-col gap-8 w-full pl-6 md:pl-0 md:flex-row md:gap-12 md:justify-end">
+        <li><a href="../../index.html" class="flex w-full gap-2 text-8 text-[white] items-center border-r-2 md:border-r-0 md:border-b-[3px] border-transparent outline-none cursor-pointer md:h-24 [ hover:border-white hover:border-opacity-40 focus:border-white focus:border-opacity-40 ] [ transition-colors duration-150 ]" tabindex="0" value="home"><span class="font-bold md:hidden lg:block">00</span>HOME</a></li>
+        <li><a href="./destination.html" class="flex w-full gap-2 text-8 text-[white] items-center border-r-2 md:border-r-0 md:border-b-[3px] border-transparent outline-none cursor-pointer md:h-24 [ hover:border-white hover:border-opacity-40 focus:border-white focus:border-opacity-40 ] [ transition-colors duration-150 ]" tabindex="0" value="destination"><span class="font-bold">01</span>DESTINATION</a></li>
+        <li><a href="./crew.html" class="flex w-full gap-2 text-8 text-[white] items-center border-r-2 md:border-r-0 md:border-b-[3px] border-transparent outline-none cursor-pointer md:h-24 [ hover:border-white hover:border-opacity-40 focus:border-white focus:border-opacity-40 ] [ transition-colors duration-150 ]" tabindex="0" value="crew"><span class="font-bold">02</span>CREW</a></li>
+        <li><a href="./technology.html" class="flex w-full gap-2 text-8 text-[white] items-center border-r-2 md:border-r-0 md:border-b-[3px] border-transparent outline-none cursor-pointer md:h-24 [ hover:border-white hover:border-opacity-40 focus:border-white focus:border-opacity-40 ] [ transition-colors duration-150 ]" tabindex="0" value="technology"><span class="font-bold">03</span>TECHNOLOGY</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="grid grid-rows-customMobileMainRows w-full p-6 h-full gap-6 md:p-10 lg:py-12 lg:max-w-[1110px] lg:justify-start lg:items-center lg:self-center lg:justify-self-center 2xl:max-w-[1500px]">
+    <div class="flex gap-6 items-center justify-center lg:justify-start">
+      <p class="text-6-mobile font-bold opacity-25 md:text-5-tablet lg:text-5">02</p>
+      <p class="text-6-mobile md:text-5-tablet lg:text-5">MEET YOUR CREW</p>
+    </div>
+    <div class="flex flex-col items-center justify-center gap-6 lg:grid lg:grid-cols-2 h-fit">
+      <div class="flex flex-col w-full gap-6 mt-10">
+        <div class="flex flex-col w-full gap-6">
+          <div class="flex flex-col w-full gap-2 text-center">
+            <p class="text-4-mobile opacity-50">COMMANDER</p>
+            <p class="text-3-mobile">DOUGLAS HURLEY</p>
+          </div>
+          <div class="w-full text-center lg:text-start">
+            <p class="text-9-mobile text-[var(--blue-300)]">
+              Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and 
+              former NASA astronaut. He launched into space for the third time as commander 
+              of Crew Dragon Demo-2.
+            </p>
+          </div>
+        </div>
+        <div></div>
+      </div>
+      <div></div>
+    </div>
+  </main>
+  <script type="module" src="../js/header.js"></script>
+  <script type="module" src="../js/crew.js"></script>
 </body>
 </html>
