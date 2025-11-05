@@ -39,35 +39,81 @@
       </ul>
     </nav>
   </header>
-  <main class="grid grid-rows-customMobileMainRows w-full p-6 h-full gap-6 md:p-10 lg:py-12 lg:px-0 lg:max-w-[1110px] lg:justify-start lg:items-center lg:self-center lg:justify-self-center 2xl:max-w-[1500px]">
+  <main class="grid grid-rows-customMobileMainRows w-full p-6 h-full gap-6 md:p-10 lg:py-12 lg:px-0 lg:max-w-[850px] xl:max-w-[1110px] lg:justify-center lg:items-center lg:self-center lg:justify-self-center 2xl:max-w-[1500px]">
     <div class="flex gap-6 items-center justify-center md:justify-start">
       <p class="text-6-mobile font-bold opacity-25 md:text-5-tablet lg:text-5">02</p>
       <p class="text-6-mobile md:text-5-tablet lg:text-5">MEET YOUR CREW</p>
     </div>
     <div class="flex flex-col w-full h-fit items-center justify-center gap-6 lg:grid lg:grid-cols-2 lg:gap-8 lg:h-full">
-      <div class="flex flex-col items-center justify-center w-full h-full gap-6 mt-10">
-        <div class="flex flex-col w-full lg:h-full lg:justify-center gap-6">
-          <div class="flex flex-col w-full gap-2 text-center lg:text-start">
-            <p class="text-4-mobile md:text-4-tablet lg:text-4 opacity-50">COMMANDER</p>
-            <p class="text-3-mobile md:text-3-tablet lg:text-3">DOUGLAS HURLEY</p>
+      <div class="flex flex-col w-full items-center justify-center gap-6 mt-10">
+        <div class="relative overflow-hidden w-[327px] h-[245px] md:w-[512px] md:h-[231px] xl:w-[539px] lg:h-[450px]">
+          <div class="main__crewInfo flex absolute flex-col inset-0 -translate-x-full gap-6 z-10 [ transition-transform duration-500 ] lg:justify-center">
+            <div class="flex flex-col w-full gap-2 text-center lg:text-start">
+              <p class="text-4-mobile md:text-4-tablet lg:text-4 opacity-50">COMMANDER</p>
+              <p class="text-3-mobile md:text-3-tablet lg:text-3">DOUGLAS HURLEY</p>
+            </div>
+            <div class="w-full text-center lg:text-start">
+              <p class="text-9-mobile text-[var(--blue-300)] md:text-9-tablet lg:text-9">
+                Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and 
+                former NASA astronaut. He launched into space for the third time as commander 
+                of Crew Dragon Demo-2.<br><br>
+              </p>
+            </div>
           </div>
-          <div class="w-full text-center lg:text-start">
-            <p class="text-9-mobile text-[var(--blue-300)] md:text-9-tablet lg:text-9">
-              Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and 
-              former NASA astronaut. He launched into space for the third time as commander 
-              of Crew Dragon Demo-2.<br><br>
-            </p>
+          <div class="main__crewInfo flex absolute flex-col inset-0  -translate-x-full gap-6 z-10 [ transition-transform duration-500 ] lg:justify-center">
+            <div class="flex flex-col w-full gap-2 text-center lg:text-start">
+              <p class="text-4-mobile md:text-4-tablet lg:text-4 opacity-50">MISSION SPECIALIST</p>
+              <p class="text-3-mobile md:text-3-tablet lg:text-3">MARK SHUTTLEWORTH</p>
+            </div>
+            <div class="w-full text-center lg:text-start">
+              <p class="text-9-mobile text-[var(--blue-300)] md:text-9-tablet lg:text-9">
+                Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
+                the Linux-based Ubuntu operating system. Shuttleworth became the first South African 
+                to travel to space as a space tourist.<br><br>
+              </p>
+            </div>
+          </div>
+          <div class="main__crewInfo flex absolute flex-col inset-0  -translate-x-full gap-6 z-10 [ transition-transform duration-500 ] lg:justify-center">
+            <div class="flex flex-col w-full gap-2 text-center lg:text-start">
+              <p class="text-4-mobile md:text-4-tablet lg:text-4 opacity-50">PILOT</p>
+              <p class="text-3-mobile md:text-3-tablet lg:text-3">VICTOR GLOVER</p>
+            </div>
+            <div class="w-full text-center lg:text-start">
+              <p class="text-9-mobile text-[var(--blue-300)] md:text-9-tablet lg:text-9">
+                Pilot on the first operational flight of the SpaceX Crew Dragon to the 
+                International Space Station. Glover is a commander in the U.S. Navy where he 
+                pilots an F/A-18.He was a crew member of Expedition 64, and served as a 
+                station systems flight engineer. <br><br>
+              </p>
+            </div>
+          </div>
+          <div class="main__crewInfo flex absolute flex-col inset-0  -translate-x-full gap-6 z-10 [ transition-transform duration-500 ] lg:justify-center">
+            <div class="flex flex-col w-full gap-2 text-center lg:text-start">
+              <p class="text-4-mobile md:text-4-tablet lg:text-4 opacity-50">FLIGHT ENGINEER</p>
+              <p class="text-3-mobile md:text-3-tablet lg:text-3">ANOUSHEH ANSARI</p>
+            </div>
+            <div class="w-full text-center lg:text-start">
+              <p class="text-9-mobile text-[var(--blue-300)] md:text-9-tablet lg:text-9">
+                Anousheh Ansari is an Iranian American engineer and co-founder of Prodea 
+                Systems. Ansari was the fourth self-funded space tourist, the first 
+                self-funded woman to fly to the ISS, and the first Iranian in space. 
+                <br><br>
+              </p>
+            </div>
           </div>
         </div>
         <div class="flex w-full items-center justify-center gap-4 lg:justify-start lg:pb-12 lg:gap-10">
-          <button class="bg-white bg-opacity-[17.44%] w-[10px] h-[10px] rounded-[50%] outline-none [ hover:bg-opacity-50 focus:bg-opacity-50 transition-colors duration-150 ] lg:w-[15px] lg:h-[15px]"></button>
-          <button class="bg-white bg-opacity-[17.44%] w-[10px] h-[10px] rounded-[50%] outline-none [ hover:bg-opacity-50 focus:bg-opacity-50 transition-colors duration-150 ] lg:w-[15px] lg:h-[15px]"></button>
-          <button class="bg-white bg-opacity-[17.44%] w-[10px] h-[10px] rounded-[50%] outline-none [ hover:bg-opacity-50 focus:bg-opacity-50 transition-colors duration-150 ] lg:w-[15px] lg:h-[15px]"></button>
-          <button class="bg-white bg-opacity-[17.44%] w-[10px] h-[10px] rounded-[50%] outline-none [ hover:bg-opacity-50 focus:bg-opacity-50 transition-colors duration-150 ] lg:w-[15px] lg:h-[15px]"></button>
+          <button class="main__crewBtn bg-white bg-opacity-[17.44%] w-[10px] h-[10px] rounded-[50%] outline-none [ hover:bg-opacity-50 focus:bg-opacity-50 transition-colors duration-150 ] lg:w-[15px] lg:h-[15px]"></button>
+          <button class="main__crewBtn bg-white bg-opacity-[17.44%] w-[10px] h-[10px] rounded-[50%] outline-none [ hover:bg-opacity-50 focus:bg-opacity-50 transition-colors duration-150 ] lg:w-[15px] lg:h-[15px]"></button>
+          <button class="main__crewBtn bg-white bg-opacity-[17.44%] w-[10px] h-[10px] rounded-[50%] outline-none [ hover:bg-opacity-50 focus:bg-opacity-50 transition-colors duration-150 ] lg:w-[15px] lg:h-[15px]"></button>
+          <button class="main__crewBtn bg-white bg-opacity-[17.44%] w-[10px] h-[10px] rounded-[50%] outline-none [ hover:bg-opacity-50 focus:bg-opacity-50 transition-colors duration-150 ] lg:w-[15px] lg:h-[15px]"></button>
         </div>
       </div>
-      <div class="grid place-items-center w-full h-full">
-        <img class="w-[271.24px] h-[340px] md:w-[446.8px] md:h-[560px] lg:w-[539.28px] lg:h-[676px]" src="../assets/crew/image-douglas-hurley.png" alt="PNG of Douglas Hurley">
+      <div class="grid place-items-center relative overflow-hidden w-[327px] h-[450px] z-20 md:w-[688px] md:h-[560px] lg:w-[539px] lg:h-[734px]">
+        <img class="main__crewImg absolute translate-x-full [ transition-transform duration-500 ] md:px-40 lg:px-10" src="../assets/crew/image-douglas-hurley.png" alt="PNG of Douglas Hurley">
+        <img class="main__crewImg absolute translate-x-full [ transition-transform duration-500 ] md:px-40 lg:px-10" src="../assets/crew/image-mark-shuttleworth.png" alt="PNG of Mark Shuttleworth">
+        <img class="main__crewImg absolute translate-x-full [ transition-transform duration-500 ] md:px-40 lg:px-10" src="../assets/crew/image-victor-glover.png" alt="PNG of Victor Glover">
+        <img class="main__crewImg absolute translate-x-full [ transition-transform duration-500 ] md:px-40 lg:px-10" src="../assets/crew/image-anousheh-ansari.png" alt="PNG of Anousheh Ansari">
       </div>
     </div>
   </main>
