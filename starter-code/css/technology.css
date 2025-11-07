@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.tech__slideBtn.active{
+  color: var(--black);
+  background-color: var(--white);
+  opacity: 1;
+}
