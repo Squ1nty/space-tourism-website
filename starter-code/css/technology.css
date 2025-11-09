@@ -7,3 +7,7 @@
   background-color: var(--white);
   opacity: 1;
 }
+.tech__heroImg.active, 
+.tech__textBox.active{
+  transform: translateX(0);
+}

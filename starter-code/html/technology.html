@@ -39,32 +39,58 @@
       </ul>
     </nav>
   </header>
-  <main class="grid grid-rows-customMobileMainRows w-full pt-6 pb-12 h-full gap-6 md:py-10 lg:py-12 lg:px-0 lg:max-w-[950px] xl:max-w-[1275px] lg:justify-center lg:items-center lg:self-center lg:justify-self-end 2xl:justify-self-center 2xl:max-w-[1500px]">
-    <div class="flex w-full gap-6 items-center justify-center md:justify-start">
+  <main class="grid grid-rows-customMobileMainRows w-full pt-6 pb-12 h-full gap-6 md:py-10 lg:py-12 lg:px-0 lg:max-w-[950px] xl:max-w-[1275px] xl:h-fit lg:justify-center lg:items-center lg:self-center lg:justify-self-end 2xl:justify-self-center 2xl:max-w-[1500px]">
+    <div class="flex w-full gap-6 items-center justify-center px-10 md:justify-start xl:px-0">
       <p class="text-6-mobile font-bold opacity-25 md:text-5-tablet lg:text-5">02</p>
       <p class="text-6-mobile md:text-5-tablet lg:text-5">MEET YOUR CREW</p>
     </div>
     <div class="grid grid-rows-2 w-full h-fit gap-8 lg:grid lg:grid-cols-2 lg:grid-rows-none lg:gap-8 lg:py-12 lg:h-full">
-      <div class="grid place-items-center w-full pt-16 lg:pt-0 lg:col-start-2 lg:col-end-3 lg:row-span-1">
-        <img class="tech__heroImg launch-vehicle max-h-[258px] object-cover object-bottom md:object-top sm:max-h-none">
+      <div class="grid relative overflow-hidden place-items-center w-full h-[322px] pt-16 md:h-[421px] lg:h-[650px] lg:pt-0 lg:col-start-2 lg:col-end-3 lg:row-span-1">
+        <img class="tech__heroImg launch-vehicle absolute max-h-[258px] object-cover object-bottom [ translate-x-full transition-transform duration-500 ] md:object-top md:max-h-[550px] xl:max-h-[600px]">
+        <img class="tech__heroImg spaceport absolute max-h-[258px] object-cover object-center [ translate-x-full transition-transform duration-500 ] md:max-h-[550px] xl:max-h-[600px]">
+        <img class="tech__heroImg space-capsule absolute max-h-[258px] object-cover object-center [ translate-x-full transition-transform duration-500 ] md:max-h-[550px] xl:max-h-[600px]">
       </div>
-      <div class="flex flex-col gap-10 h-fit w-full px-6 md:px-10 lg:self-center lg:flex-row lg:px-0 lg:gap-16 lg:col-start-1 lg:col-end-2 lg:row-start-1">
+      <div class="flex flex-col gap-10 h-fit w-full items-center px-6 md:px-10 lg:self-center lg:flex-row lg:px-0 lg:gap-16 lg:col-start-1 lg:col-end-2 lg:row-start-1">
         <div class="flex items-center justify-center gap-4 w-full lg:w-fit lg:flex-col lg:gap-8">
           <button class="tech__slideBtn w-10 h-10 rounded-[50%] text-white border-white border-[1px] border-opacity-25 outline-none [ hover:border-opacity-100 focus:border-opacity-100 transition-all duration-150 ] text-4-mobile md:w-14 md:h-14 md:text-4-tablet lg:w-20 lg:h-20 lg:text-4">1</button>
           <button class="tech__slideBtn w-10 h-10 rounded-[50%] text-white border-white border-[1px] border-opacity-25 outline-none [ hover:border-opacity-100 focus:border-opacity-100 transition-all duration-150 ] text-4-mobile md:w-14 md:h-14 md:text-4-tablet lg:w-20 lg:h-20 lg:text-4">2</button>
           <button class="tech__slideBtn w-10 h-10 rounded-[50%] text-white border-white border-[1px] border-opacity-25 outline-none [ hover:border-opacity-100 focus:border-opacity-100 transition-all duration-150 ] text-4-mobile md:w-14 md:h-14 md:text-4-tablet lg:w-20 lg:h-20 lg:text-4">3</button>
         </div>
-        <div class="tech__textBox flex flex-col gap-4 w-full lg:gap-6">
-          <div class="flex flex-col gap-4 w-full text-center lg:text-start">
-            <p class="text-4-mobile opacity-50 md:text-4-tablet lg:text-4">THE TERMINOLOGY...</p>
-            <p class="text-3-mobile md:text-3-tablet lg:text-3">LAUNCH VEHICLE</p>
+        <div class="grid relative place-items-center overflow-hidden w-[88%] h-[300px] md:w-2/3 md:h-[300px] lg:w-[491px] lg:h-[500px]">
+          <div class="tech__textBox flex absolute flex-col gap-4 [ -translate-x-full transition-transform duration-500 ] lg:gap-6">
+            <div class="flex flex-col gap-4 w-full text-center lg:text-start">
+              <p class="text-4-mobile opacity-50 md:text-4-tablet lg:text-4">THE TERMINOLOGY...</p>
+              <p class="text-3-mobile md:text-3-tablet lg:text-3">LAUNCH VEHICLE</p>
+            </div>
+            <p class="text-9-mobile text-center text-[var(--blue-300)] md:text-9-tablet lg:text-9 lg:text-start">
+              A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
+              payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X 
+              carrier rocket is the most powerful in operation. Standing 150 metres tall, it's 
+              quite an awe-inspiring sight on the launch pad!
+            </p>
           </div>
-          <p class="text-9-mobile text-center text-[var(--blue-300)] md:text-9-tablet lg:text-9 lg:text-start">
-            A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
-            payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X 
-            carrier rocket is the most powerful in operation. Standing 150 metres tall, it's 
-            quite an awe-inspiring sight on the launch pad!
-          </p>
+          <div class="tech__textBox flex absolute flex-col gap-4 [ -translate-x-full transition-transform duration-500 ] lg:gap-6">
+            <div class="flex flex-col gap-4 w-full text-center lg:text-start">
+              <p class="text-4-mobile opacity-50 md:text-4-tablet lg:text-4">THE TERMINOLOGY...</p>
+              <p class="text-3-mobile md:text-3-tablet lg:text-3">SPACEPORT</p>
+            </div>
+            <p class="text-9-mobile text-center text-[var(--blue-300)] md:text-9-tablet lg:text-9 lg:text-start">
+              A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport 
+              for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally 
+              situated to take advantage of the Earth&apos;s rotation for launch.
+            </p>
+          </div>
+          <div class="tech__textBox flex absolute flex-col gap-4 [ -translate-x-full transition-transform duration-500 ] lg:gap-6">
+            <div class="flex flex-col gap-4 w-full text-center lg:text-start">
+              <p class="text-4-mobile opacity-50 md:text-4-tablet lg:text-4">THE TERMINOLOGY...</p>
+              <p class="text-3-mobile md:text-3-tablet lg:text-3">SPACE CAPSULE</p>
+            </div>
+            <p class="text-9-mobile text-center text-[var(--blue-300)] md:text-9-tablet lg:text-9 lg:text-start">
+              A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the 
+              Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It 
+              includes a space gym, cinema, and plenty of other activities to keep you entertained.
+            </p>
+          </div>
         </div>
       </div>
     </div>
