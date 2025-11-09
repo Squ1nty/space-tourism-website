@@ -10,7 +10,7 @@
     "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d root"
   },
   "name": "space-tourism-website-main",
   "description": "![Design preview for the Space tourism website coding challenge](./preview.jpg)",
