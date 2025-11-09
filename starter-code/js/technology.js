@@ -32,21 +32,21 @@ btns.forEach(btn => {
 // Handles major screen size changes upon initial load and any resizing
 function handleImgs(){
   if(window.innerWidth >= 768 && window.innerWidth < 1024){
-    bgImg.setAttribute("src", "../assets/technology/background-technology-tablet.jpg");
+    bgImg.setAttribute("src", "/starter-code/assets/technology/background-technology-tablet.jpg");
     heroImgs.forEach(img => {
-      img.setAttribute("src", `../assets/technology/image-${img.classList[1]}-landscape.jpg`);
+      img.setAttribute("src", `/starter-code/assets/technology/image-${img.classList[1]}-landscape.jpg`);
     });
   }
   else if(window.innerWidth >= 1024){
-    bgImg.setAttribute("src", "../assets/technology/background-technology-desktop.jpg");
+    bgImg.setAttribute("src", "/starter-code/assets/technology/background-technology-desktop.jpg");
     heroImgs.forEach(img => {
-      img.setAttribute("src", `../assets/technology/image-${img.classList[1]}-portrait.jpg`);
+      img.setAttribute("src", `/starter-code/assets/technology/image-${img.classList[1]}-portrait.jpg`);
     });
   }
   else if(window.innerWidth < 768){
-    bgImg.setAttribute("src", "../assets/technology/background-technology-mobile.jpg");
+    bgImg.setAttribute("src", "/starter-code/assets/technology/background-technology-mobile.jpg");
     heroImgs.forEach(img => {
-      img.setAttribute("src", `../assets/technology/image-${img.classList[1]}-portrait.jpg`);
+      img.setAttribute("src", `/starter-code/assets/technology/image-${img.classList[1]}-portrait.jpg`);
     });
   }
 }
