@@ -8,13 +8,13 @@ let planetaryObjTime = document.querySelectorAll(".main__planetaryObjTime");
 // Handles major screen size changes upon initial load and any resizing
 function handleBackgroundImg(){
   if(window.innerWidth >= 768 && window.innerWidth < 1440){
-    bgImg.setAttribute("src", "/starter-code/assets/destination/background-destination-tablet.jpg");
+    bgImg.setAttribute("src", "/assets/destination/background-destination-tablet.jpg");
   }
   else if(window.innerWidth >= 1440){
-    bgImg.setAttribute("src", "/starter-code/assets/destination/background-destination-desktop.jpg");
+    bgImg.setAttribute("src", "/assets/destination/background-destination-desktop.jpg");
   }
   else if(window.innerWidth < 768){
-    bgImg.setAttribute("src", "/starter-code/assets/destination/background-destination-mobile.jpg");
+    bgImg.setAttribute("src", "/assets/destination/background-destination-mobile.jpg");
   }
 }
 
