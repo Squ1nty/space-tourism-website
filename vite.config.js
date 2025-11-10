@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/space-tourism-website/' : '/',
+  base: '/',
   build: {
-    outDir: 'root',
+    outDir: 'dist',
     assetsDir: 'assets',
     rollupOptions: {
       input: {
